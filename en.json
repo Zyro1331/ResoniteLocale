@@ -3130,6 +3130,11 @@
         "Universe.Units.EarthRadius": "Earth Radius",
         "Universe.Units.LunarDistance": "Lunar Distance",
 
+        "CloudHome.UpdateNotice.Header": "Update Notice",
+        "CloudHome.UpdateNotice.Content": "<align=center>A newer version of the cloud home is available!<br><br>Your version is out of date by <closeallblock><b><color=hero.cyan>{version_mismatch_days,plural, one {# day} other {# days}}</color></b>.</align><br><br>Click the link below to visit it. While you're there, you can save the world if you want to use it.<br><br>If you want to see what's new, check out the <b><color=hero.purple>#devlog</color></b> channel in our Discord!",
+        "CloudHome.UpdateNotice.DiscordLinkName": "{appName} Discord",
+        "CloudHome.UpdateNotice.CloudHomeLinkName": "Visit the new Cloud Home",
+
         "Help.Help": "Help",
         "Help.ComingSoon": "Coming Soon!",
         "Help.ExampleText": "Example Text!",
@@ -3240,7 +3245,7 @@
         "Help.GettingStarted.BuildingBasics.BuildingInPlatform": "Building In-Platform",
         "Help.GettingStarted.BuildingBasics.BuildingInPlatform.Content": "{appName} gives you the freedom and tools to be creative and make whatever you can imagine, including items, worlds, and even avatars - all of which can be collaboratively created entirely from within {appName}. A variety of tools are at your disposal to help you in your creative process, from drawing with brushes to using advanced tools to edit any and all aspects of a world, or even make custom tools to suit your specific needs and workflow.",
         "Help.GettingStarted.BuildingBasics.PlatformEssentials": "{appName} Essentials",
-        "Help.GettingStarted.BuildingBasics.PlatformEssentials.Content": "A great place to start when on the path to making something is <b><color=hero.yellow>{appName} Essentials</closeall>, a folder in your Inventory provided to you, which contains a wide variety of items and tools to help you get started.<br><br>To navigate to this folder, <b><color=hero.purple>Double Click</closeall>{is_desktop, select, True {} other { with your <b><color=hero.purple>{Primary_Input}</closeall>}} on it to open it. Above the grid of items and folders you will see a list of folder you are currently in - akin to the address bar in a file browser. To spawn items from your inventory, <b><color=hero.purple>Double Click</closeall> on an item.<br><br>A benefit of the <b><color=hero.yellow>{appName} Essentials</color></b> folder is that it does not count toward your storage usage! This is because the folder is a link and not a folder saved directly inside your inventory - this is why the folder is <b><color=hero.cyan>blue</closeall>.",
+        "Help.GettingStarted.BuildingBasics.PlatformEssentials.Content": "A great place to start when on the path to making something is <b><color=hero.yellow>{appName} Essentials</closeall>, a folder in your Inventory provided to you, which contains a wide variety of items and tools to help you get started.<br><br>To navigate to this folder, <b><color=hero.purple>Double Click</closeall>{is_desktop, select, True {} other { with your <b><color=hero.purple>{Primary_Input}</closeall>}} on it to open it. Above the grid of items and folders you will see a list of folders you are currently in - akin to the address bar in a file browser. To spawn items from your inventory, <b><color=hero.purple>Double Click</closeall> on an item.<br><br>A benefit of the <b><color=hero.yellow>{appName} Essentials</color></b> folder is that it does not count toward your storage usage! This is because the folder is a link and not a folder saved directly inside your inventory - this is why the folder is <b><color=hero.cyan>blue</closeall>.",
         "Help.GettingStarted.BuildingBasics.InventoryFolders": "Inventory Folders",
         "Help.GettingStarted.BuildingBasics.InventoryFolders.Content": "To create a new folder in your inventory, click on the <sprite name=SaveIcon> <b><color=hero.cyan>Create Folder</closeall> button at the top. Give the folder a name and click <b><color=hero.green>Create</closeall> to make it, which will place you inside the folder automatically - creating folders and staying organized will be important for when you start to collect a larger number of items.",
         "Help.GettingStarted.BuildingBasics.BasicCreationTools": "Basic Creation Tools",
@@ -3377,7 +3382,7 @@
         "Help.General.Favoriting.Content": "Some items can be <b><color=hero.purple>Favorited</closeall>, like your Avatar, Keyboard, and Stream Camera. This allows you to replace default items with customized versions of each.<br><br>You can tell if an item is favorited if it has a pink background in your <color=hero.yellow><b>Inventory</closeall>.<br><br>See below for a list of <b><color=hero.yellow>Favoritable items</closeall>:",
 
         "Help.General.Favoriting.Home.Content": "Your home world - the world that loads when you launch {appName}.",
-        "Help.General.Favoriting.ProgressBar.Content": "The loading indicator for objects you're importing, Gaussian Splats you're editing, and more.",
+        "Help.General.Favoriting.ProgressBar.Content": "The loading indicator for objects you're importing, such as 3D Assets, Gaussian Splats and more.",
         "Help.General.Favoriting.AudioStreamController.Content": "The panel which appears when you bring in an audio stream.",
         "Help.General.Favoriting.TextDisplay.Content": "A basic text viewer.",
         "Help.General.Favoriting.VideoPlayer.Content": "The video player that will be used when you import a video.",
@@ -3402,7 +3407,7 @@
         "Help.Dashboard.SessionSettings.Settings.Content": "Change the name, access level, and description of your session.",
         "Help.Dashboard.SessionSettings.Users.Content": "You can manage the users in your session here. You can also respawn yourself and others from this menu.",
         "Help.Dashboard.SessionSettings.Permissions.Content": "Shows you the permission levels of every user in the session. If your permission level is moderator or above, you can assign permission levels to other users.",
-        "Help.Dashboard.Desktop.Content": "The <b><color=hero.cyan>Desktop</closeall> tab lets you view your desktop screens.<br><br>Pressing <b><color=hero.purple>{Secondary_Input}</closeall> while pointing at your desktop will open a menu to open your keyboard, or switch monitors.",
+        "Help.Dashboard.Desktop.Content": "The <b><color=hero.cyan>Desktop</closeall> tab lets you view your desktop screens.<br><br>Pressing <b><color=hero.purple>{Context_Menu_Input}</closeall> while pointing at your desktop will open a menu to open your keyboard, or switch monitors.",
         "Help.Dashboard.FileBrowser.Content": "Using the <b><color=hero.cyan>Files</closeall> tab, you can browse your computer's filesystem, share files, and import assets.",
         "Help.Dashboard.FileBrowser.Content2": "Available at the top of the window are a set of buttons for adding or importing files, and more.<br><br>    • <b><color=hero.cyan>Import</closeall>: With a file selected, this will let you import that file into {appName} if it is a supported type.<br><br>    • <b><color=hero.orange>Import As File</closeall>: With a file selected, this lets you import a file as an in-world representation of the file itself, letting you easily share it with others, or save it to your inventory.<br><br>    • <b><color=hero.green>Add Folder</closeall>: This lets you create a new folder on your computer.<br><br>    • <b><color=#7777ff>Refresh</closeall>: This refreshes the file browser, in case the files present have changed.",
         "Help.Dashboard.Settings.Content": "The <b><color=hero.cyan>Settings</closeall> tab is where you can find and customize your settings. All of {appName}'s settings are categorized by the list below.",
@@ -3726,9 +3731,13 @@
         "Help.About.Badges.Accessibility.Mute": "Mute",
         "Help.About.Badges.Accessibility.Mute.Content": "This user is mute, or has otherwise chosen to not communicate verbally.",
 
+        "Help.About.Badges.Yearly.2017.Content": "This user registered their account in 2017.",
         "Help.About.Badges.Yearly.2018.Content": "This user registered their account in 2018.",
         "Help.About.Badges.Yearly.2019.Content": "This user registered their account in 2019.",
         "Help.About.Badges.Yearly.2020.Content": "This user registered their account in 2020.",
+        "Help.About.Badges.Yearly.2021.Content": "This user registered their account in 2021.",
+        "Help.About.Badges.Yearly.2022.Content": "This user registered their account in 2022.",
+        "Help.About.Badges.Yearly.2023.Content": "This user registered their account in 2023 - the year {appName} released.",
 
         "Help.About.Badges.Account.Supporter": "Supporter",
         "Help.About.Badges.Account.Supporter.Content": "This user is supporting the platform monetarily, or has supported in the past.",
@@ -3738,7 +3747,8 @@
         "Help.About.Badges.Hosting.Host": "Host",
         "Help.About.Badges.Hosting.Host.Content": "This user is hosting the current session you're in.",
         "Help.About.Badges.Hosting.HeadlessClient": "Headless Client",
-        "Help.About.Badges.Hosting.HeadlessClient.Content": "This user is a client which hosts sessions but doesn't have any user behind it.",
+        "Help.About.Badges.Hosting.HeadlessClient.Content": "This user is a client which hosts sessions but doesn't have a presence in the world.",
+
         "Help.About.Badges.Misc.Linux.Content": "This user is running on a Linux distribution.",
         "Help.About.Badges.Misc.Durian.Content": "This user participated in the pre-release phase of {appName}.",
         "Help.About.Badges.Misc.Potato": "Potato",
