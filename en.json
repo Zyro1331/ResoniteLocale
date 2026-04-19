@@ -1,8 +1,26 @@
 {
     "localeCode": "en",
-    "authors": ["Frooxius", "Enverex", "rampa_3", "Melnus", "dfgHiatus", "Earthmark", "Ryuvi", "Nammi", "WattleFoxxo", "StiefelJackal", "RueShejn", "NepuShiro", "Choco", "Modern", "Xau", "Charizmare", "bredo"],
+    "authors": [
+        "Frooxius",
+        "Enverex",
+        "rampa_3",
+        "Melnus",
+        "dfgHiatus",
+        "Earthmark",
+        "Ryuvi",
+        "Nammi",
+        "WattleFoxxo",
+        "StiefelJackal",
+        "RueShejn",
+        "NepuShiro",
+        "Choco",
+        "Modern",
+        "Xau",
+        "Charizmare",
+        "bredo",
+        "alizard"
+    ],
     "messages": {
-
         "General.OK": "OK",
         "General.Start": "Start",
         "General.Finish": "Finish",
@@ -194,6 +212,9 @@
         "World.Connection.SteamNetworkingSockets": "Steam Networking Sockets",
         "World.Connection.TCP": "TCP<br><size=75%>{address}</size>",
 
+        "World.Connection.NoProtocolsAvailable": "No connection methods are available",
+        "World.Connection.AllProtocolsFailed": "All connection methods failed",
+
         "World.Error.AccessDenied": "Access Denied",
         "World.Error.SecurityViolation": "Security Violation",
         "World.Error.OnlyRegisteredUsers": "Only registered users are allowed to join",
@@ -235,6 +256,10 @@
         "World.Config.CleanupAssets": "Cleanup Unused Assets:",
         "World.Config.CleanupInterval": "Cleanup interval (seconds):",
 
+        "World.Config.ResoniteLinkHeader": "ResoniteLink",
+        "World.Config.ResoniteLinkOff": "ResoniteLink disabled",
+        "World.Config.ResoniteLinkPort": "ResoniteLink running on port {port}",
+
         "World.Actions.StartSession": "Start Session",
         "World.Actions.Join": "Join",
         "World.Actions.Focus": "Focus",
@@ -270,6 +295,8 @@
         "World.Actions.ModifyMetadata": "Edit Metadata",
         "World.Actions.GetSessionOrb": "Get Session Orb",
         "World.Actions.CopySessionURL": "Copy Session URL",
+
+        "World.Actions.EnableResoniteLink": "Enable ResoniteLink",
 
         "World.Indicator.NoData": "No Data",
         "World.Indicator.LocalWorld": "Local Machine",
@@ -501,6 +528,12 @@
         "Register.InvalidPassword": "Invalid Password",
         "Register.InvalidPassword.Description": "Your password is invalid. It must contain at least 8 characters, including 1 digit, 1 uppercase letter and 1 lowercase letter.",
 
+        "Register.InvalidPromoCode": "Invalid Promo Code",
+        "Register.InvalidPromoCode.Description": "The promo code entered is invalid. Please verify the spelling and try again. It isn't case-sensitive.",
+
+        "Register.ExpiredPromoCode": "Expired Promo Code",
+        "Register.ExpiredPromoCode.Description": "The promo code entered has expired. Please try a different one or remove it.",
+
         "Register.EmailAlreadyRegistered": "Email already registered",
         "Register.EmailAlreadyRegistered.Description": "An account using this email already exists, if you've forgotten your password you can click \"Lost Password\". Or you can contact support at {supportUrl}.",
 
@@ -518,6 +551,15 @@
 
         "Recovery.NoPasswordSetup": "No Password Setup",
         "Recovery.NoPasswordSetup.Description": "Please contact support at {supportUrl}.",
+
+        "Register.TooManyRegistrations": "Too many registrations",
+        "Register.TooManyRegistrations.Description": "You've registered too many accounts recently. Try again soon, or contact support at {supportUrl} if you believe this to be in error.",
+
+        "Register.StatusCheckError": "Registration status unknown",
+        "Register.StatusCheckError.Description": "Your account registration was submitted, but there was a problem checking its status. Please try logging in shortly.",
+
+        "Register.ManualLoginRequired": "Manual login required",
+        "Register.ManualLoginRequired.Description": "Your account was registered, but there was a problem retrieving session data for it. Please try logging in shortly.",
 
         "Register.UnknownError": "Unknown Error",
         "Register.UnknownError.Description": "An unknown error occurred during registration. Please contact support at {supportUrl}.",
@@ -559,6 +601,7 @@
         "Account.BirthYear": "Birth Year:",
         "Account.PoliciesAgreement": "I agree to the <color=#22B2FF>terms of service</color> and <color=#22B2FF>privacy policy</color>",
         "Account.AlternateMethods": "Login with a 3rd party service instead:",
+        "Account.PromoCode": "Promo Code:",
 
         "Account.Saml2.Title": "SAML 2.0",
         "Account.Saml2.Select": "Please select the SAML 2.0 provider you want to use:",
@@ -582,7 +625,7 @@
         "Account.TOTP.Activate.InvalidToken": "Invalid token!",
         "Account.TOTP.Message.AlreadySetup": "2FA has already been setup on your account!",
         "Account.TOTP.Message.Error": "Unexpected error! Please try again later.",
-        "Account.TOTP.Message.SetupComplete": "<size=150%>Congratulations!</size><br><br>Your account is now setup with 2FA for extra protection!<br><br>You can optionally enable this for account login with /enableLogin2FA command.",
+        "Account.TOTP.Message.SetupComplete": "<size=150%>Congratulations!</size><br><br>Your account is now setup with 2FA for extra protection!",
         "Account.TOTP.Deactivate.Header": "Deactivate 2FA",
         "Account.TOTP.Deactivate.Description": "2FA is currently <b><color=green>setup and active on your account</color></b>. If you need to deactivate it (e.g. due to loss of your phone or the codes being compromised), you can do so here.<br><br>After deactivation, you can setup 2FA again, which will generate a brand new secret code and new set of recovery codes.<br><br>If you lose your phone and need to setup 2FA again, we <b>STRONGLY</b> advise you do so immediately, as each recovery code can be used only once and after you run out you'll be completely locked out of your account.",
         "Account.TOTP.Deactivate.Deactivate": "Deactivate",
@@ -590,6 +633,7 @@
         "Account.TOTP.Message.DeactivationComplete": "2FA has been successfully deactivated on your account.<br><br>Your account is now at increased risk!<br><br>We strongly recommend setting up 2FA again immediately, especially if you used a recovery code due to losing your phone.",
 
         "Account.Type.Standard": "Standard Account",
+        "Account.Type.Promo": "Promo Account",
         "Account.Type.Business": "Business Account",
         "Account.Type.Patreon": "Patreon Supporter",
         "Account.Type.Stripe": "Stripe Supporter",
@@ -633,6 +677,7 @@
         "Permissions.NotAllowedToSave": "You are not allowed to save items in this world.",
         "Permissions.NotAllowedToSwapAvatar": "You are not allowed to swap to custom avatar here.",
         "Permissions.SavingDisabledForItem": "Saving is disabled for this item.",
+        "Permissions.NotAllowedToOpen": "You do not have permission to open this.",
 
         "User.Actions.Silence": "Silence",
         "User.Actions.Mute": "Mute",
@@ -741,11 +786,18 @@
         "Undo.ExtractMaterialsFromHierarchy": "Extract Materials from Hierarchy",
         "Undo.BatchConvertMaterials": "Batch convert materials",
 
+        "Undo.AddListElement": "Add element to list",
+        "Undo.RemoveListElement": "Remove element from a list",
+
         "Tools.Brush.ChangeColor": "Change Color",
         "Tools.Brush.IncrementSize": "Increment Size",
         "Tools.Brush.DecrementSize": "Decrement Size",
+        "Tools.Brush.FinishStrokeGroup": "Finish Stroke Group",
 
         "Tools.GeometryLineBrush.Name": "Geometry Line Brush",
+
+        "Tools.MeshPlaneBrush.Name": "Mesh Plane Brush",
+        "Tools.MeshPlaneBrush.AddHole": "Add a hole",
 
         "Tools.Dev.Name": "Development Tool",
         "Tools.Dev.CreateNew": "Create New...",
@@ -925,6 +977,8 @@
         "CreateNew.Editor.AssetOptimizationWizard": "Asset Optimization Wizard",
         "CreateNew.Editor.CubemapCreator": "Cubemap Creator",
         "CreateNew.Editor.ReflectionProbes": "Reflection Probe Wizard",
+        "CreateNew.Editor.TexturePackingWizard": "Texture Packing Wizard",
+        "CreateNew.Editor.TextureUnpackingWizard": "Texture Unpacking Wizard",
 
         "CreateNew.3DModel": "3D Model",
         "CreateNew.3DModel.Triangle": "Triangle",
@@ -948,7 +1002,7 @@
         "CreateNew.Light": "Light",
         "CreateNew.Light.Point": "Point",
         "CreateNew.Light.Spot": "Spot",
-        "CreateNew.Light.Directional": "Directional",
+        "CreateNew.Light.Directional": "Directional (Sun)",
 
         "CreateNew.Materials": "Materials",
 
@@ -1365,7 +1419,7 @@
         "Settings.HostAccessSettings": "Host Access",
         "Settings.UserRestrictionsSettings": "User Restrictions",
 
-        "Settings.WindowsSettings": "Windows Settings",
+        "Settings.OperatingSystemSettings": "OS Settings",
         "Settings.DebugSettings": "Debug",
         "Settings.LegacyFeatureSettings": "Legacy Features",
         "Settings.TwitchInterfaceSettings": "Twitch Streaming Interface",
@@ -1419,7 +1473,7 @@
         "Settings.MovementSettings.TurningDeadzone": "Turning deadzone",
         "Settings.MovementSettings.TurningDeadzone.Description": "This setting can be used to correct drift and prevent accidental turning when moving and turning on the same joystick. Increasing this value will require you to tilt your joystick further to start turning.",
         "Settings.MovementSettings.MovementExponent": "Movement exponent",
-        "Settings.MovementSettings.MovementExponent.Description": "Use this to control the curve response when moving. You can use this to either start moving slow at first and then quickly ramp up or start moving faster immediately, depending whether the value is above or below 1.0",
+        "Settings.MovementSettings.MovementExponent.Description": "Use this to control the curve response when moving. You can use this to either start moving slow at first and then quickly ramp up or start moving faster immediately, depending whether the value is above or below 1.0.",
 
         "Settings.GrabbingSettings": "Grabbing Settings",
         "Settings.GrabbingSettings.DefaultHandGrabType": "Default Hand Grab Type",
@@ -1464,7 +1518,7 @@
         "Settings.GeneralHapticsSettings.EnableHaptics.Description": "When enabled, you will receive haptic feedback from avatars and items in the world on your controllers and other haptic devices.",
 
         "Settings.GeneralVRSettings.UseVRHotswitching": "VR Hotswitching",
-        "Settings.GeneralVRSettings.UseVRHotswitching.Description": "When enabled, you will automatically be switched between VR and desktop mode when you take your VR headset on or off",
+        "Settings.GeneralVRSettings.UseVRHotswitching.Description": "When enabled, you will automatically be switched between VR and desktop mode when you take your VR headset on or off.",
 
         "Settings.TrackingSmoothingSettings.HandPositionSmoothing": "Hand Position Smoothing",
         "Settings.TrackingSmoothingSettings.HandRotationSmoothing": "Hand Rotation Smoothing",
@@ -1521,7 +1575,7 @@
         "Settings.ViveHandTrackingSettings.SnapDistance": "Controller snapping distance",
         "Settings.ViveHandTrackingSettings.SnapDistance.Description": "When your hands are within the range of controllers, they will automatically snap to them and use the hand tracking data from the controller itself, instead of the headset cameras. This controls the distance at which the hands will snap.",
         "Settings.ViveHandTrackingSettings.UseFingersWhenSnapped": "Track hands while using controllers",
-        "Settings.ViveHandTrackingSettings.UseFingersWhenSnapped.Description": "When hands are snapped to controllers, this will still pose the fingers using data coming from the VR headset cameras",
+        "Settings.ViveHandTrackingSettings.UseFingersWhenSnapped.Description": "When hands are snapped to controllers, this will still pose the fingers using data coming from the VR headset cameras.",
 
         "Settings.TrackerSettings": "Tracker Settings",
         "Settings.TrackerSettings.UseTrackers": "Use Trackers",
@@ -1557,6 +1611,10 @@
         "Settings.SteamLinkSettings": "Steam Link",
         "Settings.SteamLinkSettings.OSC_DataPort": "OSC Face tracking port",
         "Settings.SteamLinkSettings.OSC_DataPort.Description": "Which port should be used for listening for OSC face tracking data. This should match the same port you set in SteamVR settings for the face tracking to work.",
+
+        "Settings.BabbleSettings": "Project Babble",
+        "Settings.BabbleSettings.OSC_DataPort": "OSC Face tracking port",
+        "Settings.BabbleSettings.OSC_DataPort.Description": "Which port should be used for listening for OSC face tracking data. This should match the same port you set in the Babble App on the Settings page.",
 
         "Settings.HapticPointMapping.MappingTarget": "Map To",
         "Settings.HapticPointMapping.MappingTarget.Description": "Use this to configure which part of the avatar you want this device to be mapped to.",
@@ -1643,7 +1701,7 @@
         "Settings.AudioOutputDeviceSettings.DevicePriorities.Breadcrumb": "Audio Output Devices",
         "Settings.AudioOutputDeviceSettings.SetAsDefault": "Set As Default",
         "Settings.AudioOutputDeviceSettings.ForceRefreshDevices": "Force Refresh Audio Devices",
-        "Settings.AudioOutputDeviceSettings.ForceRefreshDevices.Description": "Pressing this will force Resonite to refresh the audio device list. In most cases this should not be needed, but if Resonite is failing to pick up audio device that was added, using this might help.",
+        "Settings.AudioOutputDeviceSettings.ForceRefreshDevices.Description": "Pressing this will force {appName} to refresh the audio device list. New audio devices are usually found; however, if {appName} fails to pick up an added audio device, pressing this might help.",
         "Settings.AudioOutputDeviceSettings.SeparateStreamingCameraOutput": "Separate Streaming Camera Output",
         "Settings.AudioOutputDeviceSettings.SeparateStreamingCameraOutput.Description": "When enabled, the streaming camera will render audio from its viewpoint and output it to a separate audio device.<br><br>This lets you keep your own audio from your perspective, while also capturing audio from the camera's perspective.<br><br>For this to work, the selected device must be different from your normal output device.",
         "Settings.AudioOutputDeviceSettings.StreamingCameraPriorities": "Streaming Camera Output Devices",
@@ -1745,8 +1803,8 @@
 
         "Settings.UserRestrictionsSettings.DebugReset": "Reset User Restrictions",
 
-        "Settings.WindowsSettings.KeepOriginalScreenshotFormat": "Keep original screenshot format",
-        "Settings.WindowsSettings.KeepOriginalScreenshotFormat.Description": "Enable this to avoid converting captured screenshots to JPG or PNG when saving them to the Documents folder in Windows. This can make them more difficult to use, as some apps might not be able to open the format.",
+        "Settings.OperatingSystemSettings.KeepOriginalScreenshotFormat": "Keep original screenshot format",
+        "Settings.OperatingSystemSettings.KeepOriginalScreenshotFormat.Description": "Enable this to avoid converting captured screenshots to JPG or PNG when saving them to the Pictures folder on your hard drive. This can make them more difficult to use, as some apps might not be able to open the format.",
 
         "Settings.DebugSettings.DebugInputBindings": "Debug input bindings",
         "Settings.DebugSettings.DebugInputBindings.Description": "When enabled, you will see debugging information for the input binding system. This is mostly useful for developers.",
@@ -1783,7 +1841,9 @@
         "Settings.DashSettings.DashCurvature": "Curvature",
         "Settings.DashSettings.DashCurvature.Description": "This controls how curved the dash is when you are in VR. Setting it to 0 will make it completely flat.",
         "Settings.DashSettings.OpenCloseSpeed": "Open/close speed",
-        "Settings.DashSettings.OpenCloseSpeed.Description": "Use this to adjust how quickly the dash opens and closes. If you don't like the animation, you can set this to very high value so dash opens and closes near instantly.",
+        "Settings.DashSettings.OpenCloseSpeed.Description": "Use this to adjust how quickly the dash opens and closes. Setting this to 0 will remove the animation entirely, making the open/close instant.",
+        "Settings.DashSettings.ScreenSwitchSpeed": "Screen switch speed",
+        "Settings.DashSettings.ScreenSwitchSpeed.Description": "Adjusts how quickly the dash switches between screens (e.g. Home, Contacts, Session). Setting this to 0 will remove the animation entirely, making the switch instant.",
         "Settings.DashSettings.AllowReplacingSettings": "Allow replacing settings",
         "Settings.DashSettings.AllowReplacingSettings.Description": "When enabled, you'll be able to pick the Settings facet on the dash when in UI edit mode and replace it with another.\n\nThis setting needs to be off if you want to pick the individual settings as facets. It's recommended to turn this on temporarily when you want to replace the settings UI with custom and then disable it again.",
 
@@ -1801,7 +1861,7 @@
         "Settings.NotificationSettings.InviteRequest": "Invite Requests",
         "Settings.NotificationSettings.InviteRequest.Description": "This controls if you get notifications when you receive an invite request that you can respond to.",
         "Settings.NotificationSettings.ContactRequest": "Contact Requests",
-        "Settings.NotificationSettings.ContactRequest.Description": "This controls what notifications you get when you receive a contact request from someone",
+        "Settings.NotificationSettings.ContactRequest.Description": "This controls what notifications you get when you receive a contact request from someone.",
         "Settings.NotificationSettings.ContactSessionStarted": "New Contact Sessions",
         "Settings.NotificationSettings.ContactSessionStarted.Description": "This controls what notifications you get when a new session is started by one of your contacts.",
         "Settings.NotificationSettings.PublicSessionStarted": "New Public Sessions",
@@ -1830,6 +1890,8 @@
         "Settings.FacetAnchorsSettings.ShowContainerBackground": "Show background",
         "Settings.FacetAnchorsSettings.ShowContainerBackground.Description": "Turning this off will disable the background visual on the facet anchors, making the facets themselves the only visible part.",
 
+        "Settings.LaserSettings.AlwaysPrioritizeUserspace": "Prioritize Private UI",
+        "Settings.LaserSettings.AlwaysPrioritizeUserspace.Description": "When enabled, your private UI like your dash, facet anchors or keyboard will always take priority for interactions, even if they are occluded by in-world colliders.<br><br>This can help when in-world objects prevent you from interacting with your private UI.<br><br>Keep in mind that might need to close your dash before interacting with in-world items in front of you.",
         "Settings.LaserSettings.SmoothSpeed": "Laser smooth speed",
         "Settings.LaserSettings.SmoothSpeed.Description": "Use this to control how fast the laser responds to your movements. Lower values will make the laser more sluggish, but better at filtering tremors. Higher values will be more responsive, but also transfer more controller shake.",
         "Settings.LaserSettings.ModulateStartAngle": "Modulate start angle",
@@ -1931,7 +1993,7 @@
         "Settings.InteractiveCameraFramingSettings.FirstPersonPitch": "First person pitch angle",
         "Settings.InteractiveCameraFramingSettings.FirstPersonPitch.Description": "In first person mode, use this to pitch the camera up and down.",
         "Settings.InteractiveCameraFramingSettings.FirstPersonRoll": "First person roll angle",
-        "Settings.InteractiveCameraFramingSettings.FirstPersonRoll.Description": "In first person mode, this controls the sideways rotation of the camera - tilting of left and right",
+        "Settings.InteractiveCameraFramingSettings.FirstPersonRoll.Description": "In first person mode, this controls the sideways rotation of the camera - tilting of left and right.",
         "Settings.InteractiveCameraFramingSettings.FirstPersonOffset": "First person offset",
         "Settings.InteractiveCameraFramingSettings.FirstPersonOffset.Description": "Use this to move the camera offset in first person view relative to your eyes. This can be used if the avatar face geometry is clipping into the camera's view.",
         "Settings.InteractiveCameraFramingSettings.FramingViewportPosition": "Framing viewport position",
@@ -1973,7 +2035,7 @@
         "Settings.InteractiveCameraAnchorSettings.UseLinearInterpolation.Description": "Enable this to use linear interpolation when moving between anchors instead of a smooth one. Linear interpolation starts and stops abruptly, but has a constant movement speed, regardless of the distance between anchors. This means that if anchors are further apart, it'll take longer for the camera to reach it.",
 
         "Settings.InteractiveCameraPhotoSettings.SpawnPhotoInWorld": "Spawn taken photos in world",
-        "Settings.InteractiveCameraPhotoSettings.SpawnPhotoInWorld.Description": "When you take photos using the interactive camera dialog, should they be spawned into the world? When disabled, they will only be saved to your documents or inventory (if autosave is configured)",
+        "Settings.InteractiveCameraPhotoSettings.SpawnPhotoInWorld.Description": "When you take photos using the interactive camera dialog, should they be spawned into the world? When disabled, they will only be saved to your documents or inventory (if autosave is configured).",
 
         "Settings.InteractiveCameraPostProcessingSettings.MotionBlur": "Motion blur",
         "Settings.InteractiveCameraPostProcessingSettings.MotionBlur.Description": "Should the camera render motion blur effect?",
@@ -2063,6 +2125,16 @@
         "Settings.RenderingQualitySettings.SkinWeightMode": "Skin Weights",
         "Settings.RenderingQualitySettings.SkinWeightMode.Description": "For any skinned meshes (3D models that are deformed by bones, like most avatars), this controls how many bones are used to affect position of each vertex.\n\nLowering this value will save some performance, but the deformation quality will be lower, resulting in sharp creases and other artifacts, typically around joints.",
 
+        "Settings.RendererDecouplingSettings": "Renderer Decoupling",
+        "Settings.RendererDecouplingSettings.ActivationFramerate": "Activation Framerate",
+        "Settings.RendererDecouplingSettings.ActivationFramerate.Description": "This controls when the renderer decoupling activates. If the immediate framerate were to drop below this value, the renderer will start re-rendering the scene without waiting for new frames from the engine.\n\nThis helps smooth out some parts of the hitches and mitigate interruption to playing videos or VR headset view locking up, however everything else in the scene will be frozen.\n\nSetting this to 0 deactivates this mechanism.",
+        "Settings.RendererDecouplingSettings.DeactivationFrames": "Deactivation frame count",
+        "Settings.RendererDecouplingSettings.DeactivationFrames.Description": "When decoupling is active, this indicates how many stable frames (above the activation threshold) need to be rendered before the decoupling mechanism is disabled. This can help prevent the mechanism triggering on and off with multiple subsequent hitches.",
+        "Settings.RendererDecouplingSettings.ForceDecouple": "Force Decouple",
+        "Settings.RendererDecouplingSettings.ForceDecouple.Description": "When turned on, the renderer will be forcibly constantly decoupled and will keep rendering new frames as fast as possible without waiting for the main engine.\n\n<color=hero.red>WARNING!</color> This is mostly useful for debugging reasons and diagnosing whether you're CPU bound or GPU bound (if you're CPU bound, your framerate will significantly increase with this on) and isn't meant for normal use.\n\nYou may experience significant stuttering, jitter and slow asset loading/uploading.",
+        "Settings.RendererDecouplingSettings.AssetProcessingMaxTimeMilliseconds": "Max decoupled asset processing (milliseconds)",
+        "Settings.RendererDecouplingSettings.AssetProcessingMaxTimeMilliseconds.Description": "This controls the maximum amount of time that the renderer will spend uploading assets to the GPU when decouple mechanism is active. Lowering this might increase your maximum framerate (e.g. when testing max GPU performance), but can lower loading performance and at very low values might make UI slow to update.",
+
         "Settings.ImportSettings": "Import Settings",
         "Settings.ImportSettings.SessionUrls": "On Session URL Import",
         "Settings.ImportSettings.SessionUrls.Description": "When a Session URL is imported, what should happen. The available options are:\n\n<color=hero.yellow>Open</color> - Open the Session.\n<color=hero.yellow>SpawnInterface</color> - Spawns a representation(such as a session orb) of the URL in your current location.\n<color=hero.yellow>SpawnUrl</color> - Spawns the URL in your current location as a URL Interface.",
@@ -2146,6 +2218,7 @@
         "Inspector.Member.SplitBlendshape.X": "Split Blendshape across X",
         "Inspector.Member.SplitBlendshape.Y": "Split Blendshape across Y",
         "Inspector.Member.SplitBlendshape.Z": "Split Blendshape across Z",
+        "Inspector.Member.SplitBlendshapeToStaticMesh": "Separate Blendshape into static mesh",
 
         "Inspector.ProceduralAsset.UpdateCount": "Update Count: {n}",
         "Inspector.ProceduralAsset.Error": "Error: {error}",
@@ -2289,6 +2362,10 @@
         "Inspector.Texture.SwapGB": "Swap G <--> B",
         "Inspector.Texture.SwapGA": "Swap G <--> A",
         "Inspector.Texture.SwapBA": "Swap B <--> A",
+        "Inspector.Texture.IsolateR": "Isolate Red Channel",
+        "Inspector.Texture.IsolateG": "Isolate Green Channel",
+        "Inspector.Texture.IsolateB": "Isolate Blue Channel",
+        "Inspector.Texture.IsolateA": "Isolate Alpha Channel",
         "Inspector.Texture.AddWhiteBackground": "Add White Background",
         "Inspector.Texture.AddBlackBackground": "Add Black Background",
         "Inspector.Texture.Hue": "Hue:",
@@ -2383,6 +2460,8 @@
         "Inspector.FacetPreset.Warning": "<color=red><size=125%>WARNING!</size></color><br>FacetPresets will automatically upgrade their contents when we publish new versions of those presets. If you're making a custom version, we recommend deleting this component.",
         "Inspector.GrabbableSaveBlock.Warning": "<color=red><size=125%>WARNING!</size></color><br> This component is not designed as a security/asset theft protection system. It is intended to be used for cases where you wish to block the easier methods of saving for gameplay or design reasons. It can easily be bypassed and it will not be made more secure under any circumstances.",
 
+        "Inspector.AI_GeneratedContent.Info": "This component is intended to flag content generated by generative AI. It's recommended to put it at the root of the objects which are generated through these methods. This will automatically add tags when the item is saved as well as when the world is saved with those components present, which will allow this content to be filtered.",
+
         "Inspector.ParticleSystem.BasicInfo": "Particles: {count}, FPS: {fps}, Simulation Time: {time}, Submit Time: {renderSubmitTime}, Render allocations: {allocationCount}",
         "Inspector.ParticleSystem.TrailInfo": "Trails: {trailCount} (capacity: {trailCapacity}), Trail Point Capacity: {trailPointCapacity}, Allocations: {allocationCount}",
 
@@ -2411,6 +2490,11 @@
 
         "Inspector.Actions.CopyComponent": "Copy Component",
         "Inspector.Actions.MoveComponent": "Move Component",
+
+        "Inspector.Wizard.PackTexture": "Pack Texture",
+        "Inspector.Wizard.UnpackTexture": "Unpack Texture",
+
+        "Inspector.Error": "<color=hero.red>Error! Check log.</color>",
 
         "UserInspector.Title": "User Inspector",
 
@@ -2445,8 +2529,10 @@
         "Wizard.LightSources.DisabledLights": "Disabled Lights:",
         "Wizard.LightSources.WithTag": "With Tag:",
         "Wizard.LightSources.SetShadowType": "Set Shadow Type",
-        "Wizard.LightSources.ChangeIntensity": "Change Intensity",
-        "Wizard.LightSources.ChangeRange": "Change Range",
+        "Wizard.LightSources.MultiplyIntensity": "Multiply Intensity",
+        "Wizard.LightSources.SetIntensity": "Set Intensity",
+        "Wizard.LightSources.MultiplyRange": "Multiply Range",
+        "Wizard.LightSources.SetRange": "Set Range",
         "Wizard.LightSources.Enable": "Enable",
         "Wizard.LightSources.Disable": "Disable",
         "Wizard.LightSources.Destroy": "Destroy",
@@ -2482,6 +2568,25 @@
         "Wizard.TextRenderer.ReplaceMaterial": "Replace Material",
         "Wizard.TextRenderer.ReplaceFont": "Replace Font",
         "Wizard.TextRenderer.SetColor": "Set Color",
+
+        "Wizard.TextureWizards.DefaultValue": "Default Value",
+        "Wizard.TextureWizards.Invert": "Invert",
+        "Wizard.TextureWizards.ClearTexture": "Clear Texture",
+        "Wizard.TextureWizards.ResolutionOverride": "Resolution Override",
+        "Wizard.TextureWizards.PlaceTextureHere": "Place Texture Here",
+
+        "Wizard.TexturePacker.Title": "Texture Packing Wizard",
+        "Wizard.TexturePacker.Packing": "Packing...",
+        "Wizard.TexturePacker.PackTextures": "Pack Textures",
+        "Wizard.TexturePacker.Output": "Output",
+        "Wizard.TexturePacker.AutomaticSizeHandling": "Automatic Size Handling",
+        "Wizard.TexturePacker.UseSmallest": "Use Smallest",
+        "Wizard.TexturePacker.UseLargest": "Use Largest",
+        "Wizard.TexturePacker.GenerateMipmaps": "Generate Mipmaps",
+
+        "Wizard.TextureUnpacker.Title": "Texture Unpacking Wizard",
+        "Wizard.TextureUnpacker.Unpacking": "Unpacking...",
+        "Wizard.TextureUnpacker.UnpackTexture": "Unpack Texture",
 
         "Desktop.Controls.Title": "Desktop Controls",
         "Desktop.OpenKeyboard": "Open Keyboard",
@@ -2694,7 +2799,25 @@
         "Tutorial.Saving.Title": "Welcome Home!",
         "Tutorial.Saving.Content": "Welcome to your <b><i><color=hero.yellow>Home</b></i></color> world! This is where you'll end up every time you log in.<br><br>This is a world all your own, so any changes you make are able to be saved.<br><br>If you save, everything will be just as you left it when you return!",
 
-        "Tutorial.Teleporter.Error": "Failed to load your cloud home!<br><size=66%>Step out of the teleporter and step back in to try again.</size>",
+        "Tutorial.Teleporter.SessionList.UnnamedSession": "<i><alpha=#77>Unnamed Session</closeall>",
+        "Tutorial.Teleporter.SessionList.UnnamedHost": "Hosted by: <i><alpha=#77>Unnamed Host</closeall>",
+        "Tutorial.Teleporter.SessionList.HostName": "Hosted by: <b>{hostName}</b>",
+        "Tutorial.Teleporter.SessionList.PresentUsers": "<b>{presentUsers}</b> / {totalUsers} Users Present",
+        "Tutorial.Teleporter.SessionList.PublicSessions": "Public Sessions",
+        "Tutorial.Teleporter.SessionList.NoPublicSessions": "No public sessions are available! :(<br><size=66%>You still have some options though:</size>",
+
+        "Tutorial.Teleporter.ChooseDestination": "Choose where you want to go next",
+
+        "Tutorial.Teleporter.Destinations.CloudHome": "Go to your Cloud Home",
+        "Tutorial.Teleporter.Destinations.AvatarWorld": "Go to the Avatar Gazebo",
+        "Tutorial.Teleporter.Destinations.PickAnotherSession": "Pick another session",
+        "Tutorial.Teleporter.Destinations.PickPublicSession": "Join a public session",
+
+        "Tutorial.Teleporter.WorldsTabHint": "You can also find worlds to join<br>using the World Browser on your Dashboard!",
+
+        "Tutorial.Teleporter.FailedToJoin": "<color=hero.red>Session join failed! :(</color><br><size=66%>You still have some options though:</size>",
+
+        "Tutorial.Teleporter.Transporting": "Transporting...",
 
         "CloudHome.Info.OnlineUsers": "Online {online_users,plural, one {user} other {users}}: {online_users}<br>Joinable {joinable_users,plural, one {user} other {users}}: {joinable_users}",
         "CloudHome.Info.Moderation": "Moderation",
@@ -2780,8 +2903,11 @@
         "CloudHome.Panel.Quality": "Quality",
         "CloudHome.Panel.Doors": "Doors",
         "CloudHome.Panel.Audio": "Audio",
+        "CloudHome.Panel.RealtimeReflections": "Realtime Reflections",
         "CloudHome.Panel.OverheadLighting": "Overhead Lighting",
         "CloudHome.Panel.Sconces": "Sconces",
+        "CloudHome.Panel.SpotLights": "Spot Lights",
+        "CloudHome.Panel.TableLights": "Table Lights",
         "CloudHome.Panel.FurnitureVisibility": "Furniture Visibility",
 
         "CloudHome.Panel.LowQualityMode": "Low Quality Mode",
@@ -2835,6 +2961,16 @@
         "Tutorial.Panel.TeleportLocomotion.Title": "Teleport Locomotion",
         "Tutorial.Panel.TeleportLocomotion.Content": "Teleport instantly sends you to the teleportation indicator.",
 
+        "Tutorial.DashboardInfo.Header": "Your Dashboard",
+        "Tutorial.DashboardInfo.Content": "The <b><color=hero.cyan>Dashboard</closeall> is your main menu - with it, you can talk with others, find new worlds to explore, and more!<br><br>If you need more help, take a look at the <b><color=hero.purple>Help tab.",
+        "Tutorial.DashboardInfo.GotIt": "Got it!",
+
+        "Tutorial.MentorPanel.Title": "Need Help?",
+        "Tutorial.MentorPanel.Content": "Look for users who have this badge above their head - ask them for help, they're here for <i>you</i>!",
+
+        "Tutorial.HelpTabPanel.Title": "Need Help?",
+        "Tutorial.HelpTabPanel.Content": "Within your dashboard, there is a help tab to browse information about {appName}!",
+
         "Hints.Spawn.InitialMovementDesktop": "Use the movement keys to walk around!",
         "Hints.Spawn.InitialMovementVR": "Use your joysticks to walk around!",
         "Hints.Spawn.InitialMovementVRNoButtons": "Use your trackpads to walk around!",
@@ -2878,8 +3014,14 @@
         "Hints.Sundial.Dequip": "Drop the equipped tool by choosing Unequip in your Context Menu.",
         "Hints.Sundial.DequipExtra": "Notice the options in your Context Menu have changed because you're holding this tool.",
 
-        "Hints.Sundial.Teleporter": "Press this button to activate the Teleporter to your Cloud Home!",
-        "Hints.Sundial.TeleporterExtra": "Enjoy your home and thanks for stopping by!",
+        "Hints.Sundial.Doorway": "Enter to continue!",
+
+        "Hints.DashboardDesktop": "Open and close your Dashboard by pressing Escape!",
+        "Hints.DashboardVR": "Open and close your Dashboard by pressing your Menu button!",
+        "Hints.DashboardExtra": "See below for some extra info on the Dashboard.",
+
+        "Hints.Teleporter": "Step onto the teleporter and choose where you want to go next!",
+        "Hints.TeleporterExtra": "Wherever you go, enjoy your stay in {appName}!",
 
         "UI.TextDisplay.Landscape": "Landscape",
         "UI.TextDisplay.Portrait": "Portrait",
@@ -3132,6 +3274,7 @@
 
         "CloudHome.UpdateNotice.Header": "Update Notice",
         "CloudHome.UpdateNotice.Content": "<align=center>A newer version of the cloud home is available!<br><br>Your version is out of date by <closeallblock><b><color=hero.cyan>{version_mismatch_days,plural, one {# day} other {# days}}</color></b>.</align><br><br>Click the link below to visit it. While you're there, you can save the world if you want to use it.<br><br>If you want to see what's new, check out the <b><color=hero.purple>#devlog</color></b> channel in our Discord!",
+        "CloudHome.UpdateNotice.WikiLinkName": "{appName} Wiki: Updating Your Home",
         "CloudHome.UpdateNotice.DiscordLinkName": "{appName} Discord",
         "CloudHome.UpdateNotice.CloudHomeLinkName": "Visit the new Cloud Home",
 
@@ -3325,7 +3468,7 @@
         "Help.Controls.VRGestures": "VR Gestures",
         "Help.Controls.VRGestures.Content": "{appName} offers a few quick gestures for VR users to quickly open your Dashboard, respawn if you're stuck, and more. This is a list of all available VR gestures. Note that these are just quick versions of existing actions - all of the listed actions can also be done in other ways.",
         "Help.Controls.VRGestures.EmergencyLeaveWorld": "Emergency Leave World",
-        "Help.Controls.VRGestures.EmergencyLeaveWorld.Content": "This gesture disconnects you from the current world immediately. To perform this gesture you bring your controllers to your head and press and hold <b><color=hero.purple>{Menu_Input}</closeall> for at least 3 seconds. You will feel vibrations from your controllers which increase in intensity as you get closer to disconnection.",
+        "Help.Controls.VRGestures.EmergencyLeaveWorld.Content": "This gesture disconnects you from the current world immediately. To perform this gesture you bring your controllers to your head and press and hold <b><color=hero.purple>{Context_Menu_Input}</closeall> for at least 3 seconds. You will feel vibrations from your controllers which increase in intensity as you get closer to disconnection.",
         "Help.Controls.VRGestures.EmergencyRespawn": "Emergency Respawn",
         "Help.Controls.VRGestures.EmergencyRespawn.Content": "This gesture respawns you by deleting you and spawning you at the world's spawn. To perform this gesture you bring your controllers to your head, then grab hold at least one <b><color=hero.purple>{Grip_Input}</closeall>, then press and hold <b><color=hero.purple>{Context_Menu_Input}</closeall> for at least 3 seconds. You will feel vibrations from your controllers which increase in intensity as you get closer to respawning.",
         "Help.Controls.VRGestures.ToggleEditMode": "Toggle Edit Mode",
@@ -3353,10 +3496,10 @@
         "Help.Controls.DesktopControls.FreecamMode.Content": "Enter or exit Freecam mode using <b><color=hero.purple>F6</closeall>. While in this mode, press and hold <b><color=hero.purple>Control</closeall> and <b><color=hero.purple>Right Mouse</closeall> to allow you to rotate your view, and use your <b><color=hero.purple>Movement Keys</closeall> to move around. Once you are looking and moving around, you can let go of <b><color=hero.purple>Control</closeall> - but keep <b><color=hero.purple>Right Mouse</closeall> held down, otherwise your view will lock in place again.",
 
         "Help.Controls.SteamBindings": "Steam Bindings",
-      
+
         "Help.General": "General",
         "Help.General.VoiceMode": "Voice Mode",
-        "Help.General.VoiceMode.Content": "<color=hero.purple><b>Voice modes</closeall> allow you to change how you're heard by others.<br><br>You can change your voice mode in the top right of your <color=hero.purple><b>Dashboard</closeall>.",
+        "Help.General.VoiceMode.Content": "<color=hero.purple><b>Voice modes</closeall> allow you to change how you're heard by others.<br><br>You can change your voice mode in the top left of your <color=hero.purple><b>Dashboard</closeall>.",
         "Help.General.VoiceMode.Broadcast": "Broadcast",
         "Help.General.VoiceMode.Broadcast.Content": "Allows other users to hear you at the same volume no matter how far away or where you are in a session, this is useful for letting every user in a session know important information or communicating over very large distances.",
         "Help.General.VoiceMode.Shout": "Shout",
@@ -3376,7 +3519,7 @@
         "Help.General.OnlineStatus.Offline.Content": "When you are not logged in you will appear as <b><color=hero.purple>Offline</closeall> to all other users. You will also appear offline when invisible.",
 
         "Help.General.Saving": "Saving",
-        "Help.General.Saving.Content": "Saving items lets you use them anywhere you can spawn items.<br><br>To save an item, first navigate to the folder you want to save to in your <b><color=hero.cyan>Inventory</color></b>, then grab the item with <b><color=hero.purple>{Grip_Input}</closeall>. Then while you are holding it, inside your Inventory, press the <color=hero.green><b>Save Held</b></Color> button. This will save the item into the folder you're currently in.<br><br>While grabbing the item, open your <b><color=hero.Cyan>Context Menu</closeall> {is_using_vive_wands, select, True {by quickly pressing} other {with}} <b><color=hero.purple>{Context_Menu_Input}</closeall> and select <sprite name=SaveIcon> <b><color=hero.Cyan>Save To Inventory</closeall> to save the item without needing to go to open your Dashboard.<br><br>After clicking the save button you will see the sync status facet on the top right of your Dashboard display <b><color=hero.cyan>Syncing...</closeall>. This shows the progress and percentage while uploading the item to the cloud. Saving multiple copies of an item will only save the <b>changes made to that item. For instance, saving an avatar and then saving the same avatar again with a different hair color will only take up as much storage as one copy of the avatar and whatever is different between the two copies - not two whole copies of the avatar.",
+        "Help.General.Saving.Content": "Saving items lets you use them anywhere you can spawn items.<br><br>To save an item, first navigate to the folder you want to save to in your <b><color=hero.cyan>Inventory</color></b>, then grab the item with <b><color=hero.purple>{Grip_Input}</closeall>. Then while you are holding it, inside your Inventory, press the <color=hero.green><b>Save Held</b></Color> button. This will save the item into the folder you're currently in.<br><br>While grabbing the item, open your <b><color=hero.Cyan>Context Menu</closeall> {is_using_vive_wands, select, True {by quickly pressing} other {with}} <b><color=hero.purple>{Context_Menu_Input}</closeall> and select <sprite name=SaveIcon> <b><color=hero.Cyan>Save To Inventory</closeall> to save the item without needing to go to open your Dashboard.<br><br>After clicking the save button you will see the sync status facet on the top right of your Dashboard display <b><color=hero.cyan>Syncing...</closeall>. This shows the progress and percentage while uploading the item to the cloud. Saving multiple copies of an item will only save the <b>changes</b> made to that item. For instance, saving an avatar and then saving the same avatar again with a different hair color will only take up as much storage as one copy of the avatar and whatever is different between the two copies - not two whole copies of the avatar.",
 
         "Help.General.Favoriting": "Favoriting",
         "Help.General.Favoriting.Content": "Some items can be <b><color=hero.purple>Favorited</closeall>, like your Avatar, Keyboard, and Stream Camera. This allows you to replace default items with customized versions of each.<br><br>You can tell if an item is favorited if it has a pink background in your <color=hero.yellow><b>Inventory</closeall>.<br><br>See below for a list of <b><color=hero.yellow>Favoritable items</closeall>:",
@@ -3445,7 +3588,7 @@
         "Help.Advanced.LocalSaves": "Local Saves",
 
         "Help.Advanced.Syncing": "Syncing",
-        "Help.Advanced.Syncing.Content": "When you save an item or a world to your inventory, they are uploaded to the cloud, a process called <b><color=hero.purple>Syncing</closeall>. If you're saving a particularly large item or world with many assets, syncing it can take some time. In the case of syncing worlds though, once the syncing process has begun. you can continue to work on the world without issue, as in essence a \"snapshot\" of the world is being uploaded, not what you currently see. If for some reason {appName} closes unexpectedly and you are still syncing items - don't worry! Syncing items are stored locally on your computer and they will resume syncing when you restart {appName} - no data will be lost.<br><br>In rare cases you may encounter a <b><color=hero.red>Sync Error</closeall>, which is when an item or world cannot sync to the cloud for one reason or another. <b>If you find yourself with a sync error, please don't delete your cache or data folders! That is a last resort option, and there are likely other options you can take before then to prevent data loss.</b><br><br>Depending on what kind of sync error you've encountered, there are a few ways to remedy them. Check out the wiki links below for what's relevant to your current error.",
+        "Help.Advanced.Syncing.Content": "When you save an item or a world to your inventory, they are uploaded to the cloud, a process called <b><color=hero.purple>Syncing</closeall>. If you're saving a particularly large item or world with many assets, syncing it can take some time. In the case of syncing worlds though, once the syncing process has begun, you can continue to work on the world without issue, as in essence a \"snapshot\" of the world is being uploaded, not what you currently see. If for some reason {appName} closes unexpectedly and you are still syncing items - don't worry! Syncing items are stored locally on your computer and they will resume syncing when you restart {appName} - no data will be lost.<br><br>In rare cases you may encounter a <b><color=hero.red>Sync Error</closeall>, which is when an item or world cannot sync to the cloud for one reason or another. <b>If you find yourself with a sync error, please don't delete your cache or data folders! That is a last resort option, and there are likely other options you can take before then to prevent data loss.</b><br><br>Depending on what kind of sync error you've encountered, there are a few ways to remedy them. Check out the wiki links below for what's relevant to your current error.",
         "Help.Advanced.CloudVariables": "Default Cloud Variables",
         "Help.Advanced.CloudVariables.Content": "These <b><color=hero.purple>cloud variables</closeall> are provided to you by {appName} to use as you wish. To learn more about cloud variables, check out our wiki.",
         "Help.Advanced.CloudVariables.Content2": "If you want to learn how to create your own cloud variables, see below for a list of commands available to do so.",
@@ -3613,7 +3756,7 @@
         "Help.LinksAndResources.PlatformBotCommands.BadgeCommands.PotatoBadge.Content": "Grant or remove from yourself the potato badge. It tells users your computer works best in more optimized scenes.",
         "Help.LinksAndResources.PlatformBotCommands.BadgeCommands.PrideFlagBadges": "Pride Flag Badges",
         "Help.LinksAndResources.PlatformBotCommands.BadgeCommands.PrideFlagBadges.Content": "Grant or remove a pride flag badge to yourself. Sending this command without a flag name will list all available badges for use.",
-      
+
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.GetHeadlessAccessCode": "Get Headless Access Code",
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.GetHeadlessAccessCode.Content": "Gives you the headless beta branch access code. To use this command you have to be subscribed to a supporter tier which has this perk.",
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.SharedStorage": "Shared Storage",
@@ -3672,7 +3815,7 @@
 
         "Help.LinksAndResources.PlatformBotCommands.BadgeCommands.PrideFlagBadges.Command": "/AddPrideBadge <Pride Flag Name>",
         "Help.LinksAndResources.PlatformBotCommands.BadgeCommands.PrideFlagBadges.SecondaryCommand": "/RemovePrideBadge <Pride Flag Name>",
-      
+
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.SharedStorage.Command": "/ShareStorageWithUser <User Name> <Storage Amount>",
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.SharedStorage.SecondaryCommand": "/ShareStorageWithGroup <Group Name> <Storage Amount>",
         "Help.LinksAndResources.PlatformBotCommands.BenefitCommands.SetCustom2DBadge.Command": "/Set2DBadge <Asset Hash>",
@@ -3700,9 +3843,10 @@
         "Help.TeamTitle.MediaDirector": "Media Director",
         "Help.TeamTitle.ModerationLead": "Moderation Lead",
         "Help.TeamTitle.SoundDesigner": "Sound Designer",
-        "Help.TeamTitle.Support": "Support",
+        "Help.TeamTitle.Support": "Support Lead",
         "Help.TeamTitle.UI": "UI",
         "Help.TeamTitle.VideoProducer": "Video Producer",
+        "Help.TeamTitle.HeadOfTrustAndSafety": "Head of Trust and Safety",
 
         "Help.About.Badges": "Badges",
 

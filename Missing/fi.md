@@ -2,16 +2,36 @@
 Note that this file updates only during build processes and doesn't necessarily reflect the current state.
 
 # Finnish [fi]
-General.DontShowAgain  
 Interaction.Grabbing  
 Interaction.Grab.StickyGrab  
 Interaction.Grab.HoldToHold  
-Dash.Screens.Help  
 World.Connection.LNL.LNLPoke  
+World.Connection.NoProtocolsAvailable  
+World.Connection.AllProtocolsFailed  
+World.Config.ResoniteLinkHeader  
+World.Config.ResoniteLinkOff  
+World.Config.ResoniteLinkPort  
 World.Actions.GuestWarning  
-World.Category.Avatars  
-Permissions.SavingDisabledForItem  
+World.Actions.EnableResoniteLink  
+Register.InvalidPromoCode  
+Register.InvalidPromoCode.Description  
+Register.ExpiredPromoCode  
+Register.ExpiredPromoCode.Description  
+Register.TooManyRegistrations  
+Register.TooManyRegistrations.Description  
+Register.StatusCheckError  
+Register.StatusCheckError.Description  
+Register.ManualLoginRequired  
+Register.ManualLoginRequired.Description  
+Account.PromoCode  
+Account.Type.Promo  
+Permissions.NotAllowedToOpen  
 Contacts.Unblocked  
+Undo.AddListElement  
+Undo.RemoveListElement  
+Tools.Brush.FinishStrokeGroup  
+Tools.MeshPlaneBrush.Name  
+Tools.MeshPlaneBrush.AddHole  
 Tools.ProtoFlux.Drive  
 Tools.ProtoFlux.Source  
 Tools.ProtoFlux.Reference  
@@ -31,7 +51,6 @@ ProtoFlux.UI.AsyncCall
 ProtoFlux.UI.NodeBrowser.Title  
 Importer.Model.GaussianSplatVertical  
 Importer.Model.RegularVertical  
-Importer.Model.FlipVertical  
 Importer.Slices.Title  
 Importer.Slices.TitleGrayscale  
 Importer.Slices.Description  
@@ -59,7 +78,6 @@ Settings.GiggleTechSettings.Devices.IntensityScale.Description
 Settings.GiggleTechSettings.Devices.CustomName.Description  
 Settings.GiggleTechSettings.Devices.MinimumIntensity.Description  
 Settings.GiggleTechSettings.Devices.InitialActivationIntensity.Description  
-Settings.AudioAccessibilitySettings.ForceVoiceAudioEffectsOff  
 Settings.AudioAccessibilitySettings.ForceVoiceAudioEffectsOff.Description  
 Settings.AudioInputFilteringSettings.NoiseGateAttack.Description  
 Settings.AudioInputFilteringSettings.NoiseGateHold.Description  
@@ -98,6 +116,8 @@ Settings.LocaleSettings.UseImperialUnits
 Settings.LocaleSettings.UseImperialUnits.Description  
 Settings.DashSettings.DashCurvature.Description  
 Settings.DashSettings.OpenCloseSpeed.Description  
+Settings.DashSettings.ScreenSwitchSpeed  
+Settings.DashSettings.ScreenSwitchSpeed.Description  
 Settings.DashSettings.AllowReplacingSettings.Description  
 Settings.NotificationSettings.UserOnline.Description  
 Settings.NotificationSettings.UserSociable.Description  
@@ -117,6 +137,8 @@ Settings.FacetAnchorsSettings.AnimationSpeed.Description
 Settings.FacetAnchorsSettings.FacetAnchorToggle  
 Settings.FacetAnchorsSettings.FacetAnchorToggle.Description  
 Settings.FacetAnchorsSettings.ShowContainerBackground.Description  
+Settings.LaserSettings.AlwaysPrioritizeUserspace  
+Settings.LaserSettings.AlwaysPrioritizeUserspace.Description  
 Settings.LaserSettings.SmoothSpeed.Description  
 Settings.LaserSettings.ModulateStartAngle.Description  
 Settings.LaserSettings.ModulateEndAngle.Description  
@@ -235,6 +257,15 @@ Settings.RenderingQualitySettings.ShadowResolution.Description
 Settings.RenderingQualitySettings.ShadowDistance.Description  
 Settings.RenderingQualitySettings.SkinWeightMode  
 Settings.RenderingQualitySettings.SkinWeightMode.Description  
+Settings.RendererDecouplingSettings  
+Settings.RendererDecouplingSettings.ActivationFramerate  
+Settings.RendererDecouplingSettings.ActivationFramerate.Description  
+Settings.RendererDecouplingSettings.DeactivationFrames  
+Settings.RendererDecouplingSettings.DeactivationFrames.Description  
+Settings.RendererDecouplingSettings.ForceDecouple  
+Settings.RendererDecouplingSettings.ForceDecouple.Description  
+Settings.RendererDecouplingSettings.AssetProcessingMaxTimeMilliseconds  
+Settings.RendererDecouplingSettings.AssetProcessingMaxTimeMilliseconds.Description  
 Settings.ImportSettings.SessionUrls.Description  
 Settings.ImportSettings.WorldUrls.Description  
 Settings.ImportSettings.NetworkUrls.Description  
@@ -246,6 +277,7 @@ Inspector.Slot.ParentUnder.LocalUserSpace
 Inspector.Slot.ParentUnder.LocalUserSpace.Undo  
 Inspector.Member.BreakLinkDrive  
 Inspector.Member.OpenLinkDrive  
+Inspector.Member.SplitBlendshapeToStaticMesh  
 Inspector.Mesh.ReverseWinding  
 Inspector.Mesh.TrimVertexBoneWeightsTo  
 Inspector.Mesh.BoneTrimCount  
@@ -287,6 +319,7 @@ Inspector.CharacterController.Warning
 Inspector.PrimitiveMemberEditor.Warning  
 Inspector.FacetPreset.Warning  
 Inspector.GrabbableSaveBlock.Warning  
+Inspector.AI_GeneratedContent.Info  
 Inspector.ParticleSystem.BasicInfo  
 Inspector.ParticleSystem.TrailInfo  
 Inspector.Collider.SetFromLocalBounds  
@@ -298,6 +331,9 @@ Inspector.Collider.SetFromPreciseCylinderBounds
 Inspector.Fields.Drive  
 Inspector.Fields.DriveWriteBack  
 WorkerInspector.Title  
+Wizard.LightSources.MultiplyIntensity  
+Wizard.LightSources.MultiplyRange  
+Wizard.LightSources.SetRange  
 Migration.LoginResetID.Description  
 Migration.Dialog.Source  
 Migration.Dialog.AccountDescription  
@@ -309,6 +345,7 @@ Migration.DataSelection.CloudVariable.Definitions
 Migration.DataSelection.CloudVariable.Values  
 Migration.Report.CloudVariableDefinitionStatus  
 Migration.Report.CloudVariableValueStatus  
+Tutorial.Teleporter.Transporting  
 CloudHome.Info.OnlineUsers  
 CloudHome.Info.DashInfoVR  
 CloudHome.Info.DashInfoVRNoButtons  
@@ -319,6 +356,8 @@ StickyNote.RelevantLinks
 StickyNote.Bow  
 StickyNote.Crossbow  
 StickyNote.EquipMeVR  
+Tutorial.HelpTabPanel.Title  
+Tutorial.HelpTabPanel.Content  
 Hints.Grabbing.GrabbingDesktop  
 Hints.Grabbing.GrabbingVR  
 Hints.Grabbing.Rotating  
@@ -329,7 +368,6 @@ UI.VideoPlayer.AudioZoneTheater
 UI.VideoPlayer.AudioZoneGlobal  
 UI.VideoPlayer.UsersLoaded  
 UI.VideoPlayer.AllUsersLoaded  
-UI.ColorPicker.Blackbody  
 Universe.Wavelength.FarUV  
 Universe.Wavelength.MiddleUV  
 Universe.Wavelength.ExtremeUV  
@@ -337,6 +375,11 @@ Universe.Wavelength.NearUV
 Universe.Technology.Starship  
 Universe.Technology.MoonLander  
 Universe.Technology.Voyager  
+CloudHome.UpdateNotice.Header  
+CloudHome.UpdateNotice.Content  
+CloudHome.UpdateNotice.WikiLinkName  
+CloudHome.UpdateNotice.DiscordLinkName  
+CloudHome.UpdateNotice.CloudHomeLinkName  
 Help.Help  
 Help.ComingSoon  
 Help.ExampleText  
@@ -851,6 +894,7 @@ Help.TeamTitle.SoundDesigner
 Help.TeamTitle.Support  
 Help.TeamTitle.UI  
 Help.TeamTitle.VideoProducer  
+Help.TeamTitle.HeadOfTrustAndSafety  
 Help.About.Badges  
 Help.About.Badges.StaffAndVolunteers  
 Help.About.Badges.Accessibility  
@@ -874,9 +918,13 @@ Help.About.Badges.Accessibility.HearingImpaired
 Help.About.Badges.Accessibility.HearingImpaired.Content  
 Help.About.Badges.Accessibility.Mute  
 Help.About.Badges.Accessibility.Mute.Content  
+Help.About.Badges.Yearly.2017.Content  
 Help.About.Badges.Yearly.2018.Content  
 Help.About.Badges.Yearly.2019.Content  
 Help.About.Badges.Yearly.2020.Content  
+Help.About.Badges.Yearly.2021.Content  
+Help.About.Badges.Yearly.2022.Content  
+Help.About.Badges.Yearly.2023.Content  
 Help.About.Badges.Account.Supporter  
 Help.About.Badges.Account.Supporter.Content  
 Help.About.Badges.Account.BreadDay  
